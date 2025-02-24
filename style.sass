@@ -1,75 +1,170 @@
+// Variables
+$primary: #214E41
+$secondary: #43806C
+$white: #ffffff
+$gray: #757575
+$font-raleway: 'Raleway', sans-serif
+$font-roboto: 'Roboto', sans-serif
+
+// Mixins
+@mixin flex-center
+  display: flex
+  align-items: center
+
+@mixin font($family, $weight, $size, $line-height, $color)
+  font-family: $family
+  font-weight: $weight
+  font-size: $size
+  line-height: $line-height
+  color: $color
+
+// Reset
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
 body
-    margin: 0
-    height: 940px
-    width: 1920px
-    background: black
-    color: white
-    font-family: Creatball
+  background: black
+  font-family: $font-raleway
 
+// Container
+.container
+  width: 1440px
+  margin: 0 auto
+
+// Header
+header
+  width: 100%
+  height: 90px
+  background: $white
+  @include flex-center
+  justify-content: space-between
+  padding: 0 120px
+
+  .logo
+    @include font($font-roboto, 700, 24px, 24px, $primary)
+
+  .nav
+    @include flex-center
+    gap: 40px
+
+    a
+      @include font($font-raleway, 600, 14px, 20px, $primary)
+      text-decoration: none
+
+  .btn
+    background: $secondary
+    border: none
+    border-radius: 5px
+    padding: 10px 20px
+    @include font($font-raleway, 400, 14px, 20px, $white)
+    cursor: pointer
+
+  .lang
+    @include flex-center
+    gap: 20px
+
+    a
+      @include font($font-raleway, 600, 13px, 20px, $primary)
+      text-decoration: none
+
+// Main Section
 .main
-    display: flex
-    justify-content: center
+  width: 100%
+  height: 720px
+  background-image: url(/a.jpg)
+  background-size: cover
+  padding: 161px 120px
 
+  .title
+    h1
+      @include font($font-roboto, 700, 36px, 46px, $primary)
+      width: 516px
 
-.navbar
-    display: flex
-    justify-content: center
-    gap: 96.8px
+    .subtitle
+      @include font($font-raleway, 600, 16px, 24px, $primary)
+      margin-top: 40px
 
-.nav
-    color: white
-    text-decoration: none
-    font-weight: 400
-    font-size: 27.5px
-    line-height: 48px
+    .search
+      @include flex-center
+      background: $white
+      width: 403px
+      height: 60px
+      border-radius: 5px
+      margin-top: 16px
 
-.divmoon
-    background: rgba(1, 1,1 , 0.3)
+      p
+        @include font($font-raleway, 600, 14px, 20px, $primary)
+        margin-left: 20px
 
-    .moontext
-        position: absolute
-        top: -200px
-        left: 575px
-        gap: 0
-        .moon
-            -webkit-text-stroke-width: 2.74px
-            -webkit-text-stroke-color: #FFF
-            font-family: Creatball
-            font-size: 340px
-            font-style: normal
-            font-weight: 400
-            line-height: normal
-            width: 958.587px
-            height: 352.609px
-            flex-shrink: 0
-            background: linear-gradient(to right, white 25%, transparent 25%, transparent 75%, white 1%)
-            -webkit-background-clip: text
-            background-clip: text
-            color: transparent
-        .txt
-            font-size: 30px
-            font-weight: 400
-            color: white
-            position: absolute
-            top: 650px
-            z-index: 2
-            line-height: 49.98px
+      .btn
+        width: 123px
+        height: 60px
+        background: $secondary
+        border: none
+        border-radius: 0 5px 5px 0
+        @include font($font-raleway, 600, 13px, 20px, $white)
+        cursor: pointer
 
-    .moonimg 
-        width: 613px
-        height: 586.13px
-        background: url(/moon.png)  center/cover no-repeat
-        object-fit: cover
-        display: flex
-        position: absolute
-        z-index: 0
-        left: 653px
+// Small Main Section
+.section
+  width: 100%
+  background: $white
+  padding: 176px 120px
 
-    .but
-        height: 46px
-        width: 165px
-        border: solid 1px
-        position: absolute
-        background: rgba(1, 1, 1,0)
-        top: 580px
-        left: 889px
+  .content
+    @include flex-center
+    gap: 60px
+
+    .left
+      width: 510px
+
+      .tag
+        @include font($font-raleway, 400, 13px, 20px, $secondary)
+        margin-bottom: 20px
+
+      h1
+        @include font($font-roboto, 700, 36px, 46px, $primary)
+        margin-bottom: 34px
+
+      .desc
+        @include font($font-raleway, 400, 18px, 30px, $gray)
+        margin-bottom: 26px
+
+      .link
+        @include font($font-raleway, 400, 18px, 18px, $primary)
+
+// Grid Section
+.grid
+  @include flex-center
+  width: 100%
+
+  .col-1
+    width: 705px
+    height: 640px
+    background: #E3EEED
+    padding: 120px
+
+    .tag
+      @include font($font-raleway, 400, 13px, 20px, $primary)
+
+    .info
+      h1
+        @include font($font-roboto, 700, 32px, 42px, $primary)
+        margin-bottom: 9px
+
+      p
+        @include font($font-roboto, 400, 32px, 42px, $secondary)
+        margin-bottom: 18px
+
+  .col-2
+    width: 735px
+    height: 640px
+    background: $primary
+    padding: 165px 115px
+
+    .info
+      p
+        @include font($font-raleway, 400, 20px, 34px, $white)
+        margin-bottom: 34px
