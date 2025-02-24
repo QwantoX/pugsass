@@ -6,6 +6,7 @@ $gray: #757575
 $font-raleway: 'Raleway', sans-serif
 $font-roboto: 'Roboto', sans-serif
 
+
 // Mixins
 @mixin flex-center
   display: flex
@@ -88,8 +89,9 @@ header
 
     .search
       @include flex-center
+      justify-content: space-between
       background: $white
-      width: 403px
+      width: 280+123px
       height: 60px
       border-radius: 5px
       margin-top: 16px
@@ -97,8 +99,9 @@ header
       p
         @include font($font-raleway, 600, 14px, 20px, $primary)
         margin-left: 20px
+        padding: 0 30px 0 0 0
 
-      .btn
+      .btn1
         width: 123px
         height: 60px
         background: $secondary

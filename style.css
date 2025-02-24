@@ -95,6 +95,7 @@ header .lang a {
 .main .title .search {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: #ffffff;
   width: 403px;
   height: 60px;
@@ -108,8 +109,9 @@ header .lang a {
   line-height: 20px;
   color: #214E41;
   margin-left: 20px;
+  padding: 0 30px 0 0 0;
 }
-.main .title .search .btn {
+.main .title .search .btn1 {
   width: 123px;
   height: 60px;
   background: #43806C;
