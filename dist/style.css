@@ -4,6 +4,7 @@ body {
   width: 1920px;
   background: black;
   color: white;
+  font-family: Creatball;
 }
 
 .main {
@@ -35,8 +36,20 @@ body {
   gap: 0;
 }
 .divmoon .moontext .moon {
+  -webkit-text-stroke-width: 2.74px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: Creatball;
   font-size: 340px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
+  width: 958.587px;
+  height: 352.609px;
+  flex-shrink: 0;
+  background: linear-gradient(to right, white 25%, transparent 25%, transparent 75%, white 1%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .divmoon .moontext .txt {
   font-size: 30px;
