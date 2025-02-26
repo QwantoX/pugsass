@@ -12,6 +12,7 @@ body {
 .container {
   width: 1440px;
   margin: 0 auto;
+  background: white;
 }
 
 header {
@@ -35,7 +36,7 @@ header .nav {
   align-items: center;
   gap: 40px;
 }
-header .nav a {
+header a {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -60,7 +61,7 @@ header .lang {
   align-items: center;
   gap: 20px;
 }
-header .lang a {
+header a {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 13px;
@@ -69,14 +70,20 @@ header .lang a {
   text-decoration: none;
 }
 
+.imgdiv {
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   width: 100%;
   height: 720px;
-  background-image: url(/a.jpg);
+  background-image: url(./a.jpg);
   background-size: cover;
   padding: 161px 120px;
 }
-.main .title h1 {
+
+.title h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -84,7 +91,7 @@ header .lang a {
   color: #214E41;
   width: 516px;
 }
-.main .title .subtitle {
+.title .subtitle {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -92,26 +99,30 @@ header .lang a {
   color: #214E41;
   margin-top: 40px;
 }
-.main .title .search {
+.title .mainsearch {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #ffffff;
-  width: 403px;
   height: 60px;
+  width: 403px;
   border-radius: 5px;
   margin-top: 16px;
 }
-.main .title .search p {
+.title .mainsearch input {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #214E41;
-  margin-left: 20px;
+  width: 280px;
+  height: 60px;
   padding: 0 30px 0 0 0;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  color: black;
+  font-weight: bold;
 }
-.main .title .search .btn1 {
+.title .mainsearch .btn1 {
   width: 123px;
   height: 60px;
   background: #43806C;
@@ -125,20 +136,32 @@ header .lang a {
   cursor: pointer;
 }
 
+.img1 {
+  display: inline-block;
+  width: 1200px;
+  height: 171px;
+  z-index: 3;
+  top: 725px;
+  position: absolute;
+  border-radius: 8px;
+  border-color: black;
+}
+
 .section {
   width: 100%;
   background: #ffffff;
   padding: 176px 120px;
 }
-.section .content {
+
+.content {
   display: flex;
   align-items: center;
   gap: 60px;
 }
-.section .content .left {
+.content .left {
   width: 510px;
 }
-.section .content .left .tag {
+.content .tag {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -146,7 +169,7 @@ header .lang a {
   color: #43806C;
   margin-bottom: 20px;
 }
-.section .content .left h1 {
+.content h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -154,7 +177,7 @@ header .lang a {
   color: #214E41;
   margin-bottom: 34px;
 }
-.section .content .left .desc {
+.content .desc {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -162,7 +185,7 @@ header .lang a {
   color: #757575;
   margin-bottom: 26px;
 }
-.section .content .left .link {
+.content .link {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -175,20 +198,19 @@ header .lang a {
   align-items: center;
   width: 100%;
 }
-.grid .col-1 {
+
+.col-1 {
   width: 705px;
   height: 640px;
   background: #E3EEED;
   padding: 120px;
-}
-.grid .col-1 .tag {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
   color: #214E41;
 }
-.grid .col-1 .info h1 {
+.col-1 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -196,7 +218,7 @@ header .lang a {
   color: #214E41;
   margin-bottom: 9px;
 }
-.grid .col-1 .info p {
+.col-1 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 32px;
@@ -204,13 +226,14 @@ header .lang a {
   color: #43806C;
   margin-bottom: 18px;
 }
-.grid .col-2 {
+
+.col-2 {
   width: 735px;
   height: 640px;
   background: #214E41;
   padding: 165px 115px;
 }
-.grid .col-2 .info p {
+.col-2 p {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
