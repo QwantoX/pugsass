@@ -120,6 +120,8 @@ header
     position: absolute
     border-radius: 8px
     border-color: black
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15)
+
 
 .section
     width: 100%
@@ -132,6 +134,13 @@ header
 
     .left
         width: 510px
+
+    .right
+        padding: 0 0 0 60px
+        img
+            width: 510px
+            height: 364px
+            object-fit: cover
 
     .tag
         @include font($font-raleway, 400, 13px, 20px, $secondary)
@@ -159,7 +168,7 @@ header
     padding: 120px
 
     .tag
-    @include font($font-raleway, 400, 13px, 20px, $primary)
+        @include font($font-raleway, 400, 13px, 20px, $primary)
 
     .info
     h1

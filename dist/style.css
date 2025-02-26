@@ -145,6 +145,7 @@ header a {
   position: absolute;
   border-radius: 8px;
   border-color: black;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .section {
@@ -160,6 +161,14 @@ header a {
 }
 .content .left {
   width: 510px;
+}
+.content .right {
+  padding: 0 0 0 60px;
+}
+.content .right img {
+  width: 510px;
+  height: 364px;
+  object-fit: cover;
 }
 .content .tag {
   font-family: "Raleway", sans-serif;
@@ -204,6 +213,8 @@ header a {
   height: 640px;
   background: #E3EEED;
   padding: 120px;
+}
+.col-1 .tag {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 13px;
