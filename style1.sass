@@ -1,0 +1,68 @@
+@font-face 
+    font-family: "Creatball"
+    src: url(Creatball-Regular.ttf)
+
+$mainf: "Creatball", sans-serif
+$white1: rgba(239, 242, 245, 1)
+
+@mixin font($weight, $size, $line-height)
+    font-family: $mainf
+    font-weight: $weight
+    font-size: $size
+    line-height: $line-height
+
+@mixin wh($w,$h)
+    width: $w
+    height: $h
+
+body
+    margin: 0
+    background: rgba(1,1 ,1 ,0.3 )
+
+
+.container
+    background: black
+    margin: 0 auto 
+    @include wh(1920px,9400px)
+    display: flex
+    flex-direction: column
+    
+.navbar
+    margin: 0 auto
+    display: flex
+    gap: 92.8px
+
+.n
+    text-decoration: none
+    color: $white1
+    @include font(400,27.5px,48.12px)
+    font-weight: bold
+
+
+// MOON img + SPEC TEXT
+
+.main1
+    @include wh(1920px,940px)
+    margin: 0 auto
+    color: rgba(255, 255, 255, 1)
+    background: green
+
+    h1
+        @include font(400,340px,566.45px)
+        font-weight: bold
+        position: absolute
+
+        left: 575px
+        top: 0px
+
+    .moonimg
+        @include wh(613px,586.31px)
+        position: absolute
+        left: 653px
+        top: 162px
+
+    h1:nth-child(3)
+        color: transparent
+        -webkit-text-stroke: 3px #ffffff
+
+        
