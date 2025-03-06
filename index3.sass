@@ -1,0 +1,152 @@
+@font-face 
+    font-family: "Creatball"
+    src: url(./Creatball-Regular.ttf)
+
+@mixin font($weight, $size, $line-height,$color)
+    font-family: "Creatball", sans-serif
+    font-weight: $weight
+    font-size: $size
+    line-height: $line-height
+    color: $color
+
+
+
+body
+    margin: 0
+    padding: 0
+
+
+.container
+    margin: 0 auto
+    width: 1920px
+    background: rgba(18,18,18,255)
+    color: white
+
+
+ul
+    margin: 0 
+    padding: 0
+    list-style-type: none
+
+.firstpage
+    .navbar
+        width: 405px
+        padding: 10px 0 0 0
+        height: 49px
+        color: white
+        margin: 0 auto
+        ul
+            display: flex
+            flex-direction: row
+            gap: 92.8px
+            li
+                a
+                    text-decoration: none
+                    @include font(400,27.5px,48px,white)
+
+
+    .moondiv 
+        .a
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 1920px
+            height: 840px
+            align-items: center
+            img
+                position: absolute
+                transform: translate(-50%, -50%)
+                width: 613px
+                height: 586px
+                left: 50%
+                top:50%
+
+            h1
+                position: absolute
+                transform: translate(-50%, -50%)
+                left: 50%
+                top: 20%
+                @include font(400,340px,567px,rgba(255, 255, 255, 1))
+
+            h1:nth-child(3)
+                color: transparent
+                -webkit-text-stroke: 3px #ffffff
+            .el
+                position: relative
+                transform: translate(0%, 0%)
+                @include font(400,30px,50px,rgba(255, 255, 255, 1))
+            p
+                padding: 220px 0 0 0
+
+            button
+                padding: 10px 25px 10px 25px
+                background: transparent
+
+
+    .extra
+        ul
+            display: flex
+            flex-direction: row
+            gap: 430px
+            justify-content: center
+
+        h1
+            @include font(400,48px,48px,rgba(255, 255, 255, 1))
+
+        p
+            @include font(400,28px,28px,rgba(255, 255, 255, 1))
+            
+
+
+
+.secondpage
+    height: 940px
+    width: 1920px
+
+    .left
+        width: 1016px
+        margin: 136px 0 0 125px
+        h1
+            @include font(400,62px,75px,white)
+        p
+            @include font(400,23px,38px,rgba(155, 161, 168, 1))
+            // width: 746px
+            // height: 152px
+            padding: 0 0 0 18px
+        img
+            width: 570px
+            height: 380px
+
+    .right
+        img
+            width: 788px
+            height: 580px
+            position: absolute
+            left: 1028px
+            top: 1394px
+
+.thirdpage
+    height: 1920px
+    width: 940px
+    display: flex
+    .left
+        width: 1016px
+        margin: 136px 0 0 125px
+        h1
+            @include font(400,62px,75px,white)
+        p
+            @include font(400,23px,38px,rgba(155, 161, 168, 1))
+            // width: 746px
+            // height: 152px
+            padding: 0 0 0 18px
+        img
+            width: 570px
+            height: 380px
+
+    .right
+        img
+            width: 840px
+            height: 780px
+            position: absolute
+            left: 1028px
+            top: 2394px

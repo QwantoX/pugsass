@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Creatball";
+  src: url(./Creatball-Regular.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1920px;
+  background: #121212;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.firstpage .navbar {
+  width: 405px;
+  padding: 10px 0 0 0;
+  height: 49px;
+  color: white;
+  margin: 0 auto;
+}
+.firstpage .navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 92.8px;
+}
+.firstpage .navbar ul li a {
+  text-decoration: none;
+  font-family: "Creatball", sans-serif;
+  font-weight: 400;
+  font-size: 27.5px;
+  line-height: 48px;
+  color: white;
+}
+.firstpage .moondiv .a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1920px;
+  height: 840px;
+  align-items: center;
+}
+.firstpage .moondiv .a img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 613px;
+  height: 586px;
+  left: 50%;
+  top: 50%;
+}
+.firstpage .moondiv .a h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 20%;
+  font-family: "Creatball", sans-serif;
+  font-weight: 400;
+  font-size: 340px;
+  line-height: 567px;
+  color: white;
+}
+.firstpage .moondiv .a h1:nth-child(3) {
+  color: transparent;
+  -webkit-text-stroke: 3px #ffffff;
+}
+.firstpage .moondiv .a .el {
+  position: relative;
+  transform: translate(0%, 0%);
+  font-family: "Creatball", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  color: white;
+}
+.firstpage .moondiv .a p {
+  padding: 220px 0 0 0;
+}
+.firstpage .moondiv .a button {
+  padding: 10px 25px 10px 25px;
+  background: transparent;
+}
+.firstpage .extra ul {
+  display: flex;
+  flex-direction: row;
+  gap: 430px;
+  justify-content: center;
+}
+.firstpage .extra h1 {
+  font-family: "Creatball", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  color: white;
+}
+.firstpage .extra p {
+  font-family: "Creatball", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  color: white;
+}
+
+.secondpage {
+  height: 940px;
+  width: 1920px;
+}
+.secondpage .left {
+  width: 1016px;
+  margin: 136px 0 0 125px;
+}
+.secondpage .left h1 {
+  font-family: "Creatball", sans-serif;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 75px;
+  color: white;
+}
+.secondpage .left p {
+  font-family: "Creatball", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 38px;
+  color: #9ba1a8;
+  padding: 0 0 0 18px;
+}
+.secondpage .left img {
+  width: 570px;
+  height: 380px;
+}
+.secondpage .right img {
+  width: 788px;
+  height: 580px;
+  position: absolute;
+  left: 1028px;
+  top: 1394px;
+}
+
+.thirdpage {
+  height: 1920px;
+  width: 940px;
+  display: flex;
+}
+.thirdpage .left {
+  width: 1016px;
+  margin: 136px 0 0 125px;
+}
+.thirdpage .left h1 {
+  font-family: "Creatball", sans-serif;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 75px;
+  color: white;
+}
+.thirdpage .left p {
+  font-family: "Creatball", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 38px;
+  color: #9ba1a8;
+  padding: 0 0 0 18px;
+}
+.thirdpage .left img {
+  width: 570px;
+  height: 380px;
+}
+.thirdpage .right img {
+  width: 840px;
+  height: 780px;
+  position: absolute;
+  left: 1028px;
+  top: 2394px;
+}
